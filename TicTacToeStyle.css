@@ -1,0 +1,103 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.container {
+  margin: 30px auto;
+  width: 500px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+}
+.game-container {
+	width: 420px;
+	margin: 0 auto;
+}
+#game-board {
+  width: 420px;
+  height: 420px;
+  display: flex;
+  flex-flow: row wrap;
+}
+.game-grid {
+  width: 140px;
+  height: 140px;
+  border: 1px dotted black;
+}
+.marked-x {
+  background: url('https://www.nintex.com/blog/wp-content/uploads/2017/02/Nintex_Logo-X-150x150.png') no-repeat center;
+}
+.marked-o {
+  background: url('http://compassioncircle.com/wp-content/uploads/2015/01/Not-Tested_Green-Circle-150x150.png') no-repeat center;
+}
+.overlay {
+  position: absolute;
+  background-color:lightyellow;
+  width: 420px;
+  height:420px;
+}
+#play-overlay {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	color: black;
+}
+#start-game{
+    position: absolute;
+    bottom: -5%;
+    left: 3%;
+    background-color: salmon;
+    border-radius: 50px;
+    
+}
+.header-size{
+    font-size: 125%;
+    padding-bottom: 5%;
+    color:tomato;
+    
+}
